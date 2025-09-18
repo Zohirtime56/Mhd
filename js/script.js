@@ -34,16 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // التحقق من الاسم
             if (nameInput.value.trim() === '') {
-                showError(nameInput, 
-            'الرجاء ادخال اسمك');
+                showError(nameInput, 'الرجاء إدخال اسمك.'); // ✅ صح
                 isValid = false;
             }
 
             // التحقق من البريد الإلكتروني
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(emailInput.value)) {
-                showError(emailInput, 
-              'الرجاء ادخال بريد الكتروني صحيح');
+                showError(emailInput, 'الرجاء إدخال بريد إلكتروني صحيح.'); // ✅ صح
                 isValid = false;
             }
 
