@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // التحقق من الاسم
             if (nameInput.value.trim() === '') {
                 showError(nameInput, 
-            'ZOHAIR');
+            'الرجاء ادخال اسمك');
                 isValid = false;
             }
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(emailInput.value)) {
                 showError(emailInput, 
-              'zouhirtissoudali@gmail.com');
+              'الرجاء ادخال بريد الكتروني صحيح');
                 isValid = false;
             }
 
